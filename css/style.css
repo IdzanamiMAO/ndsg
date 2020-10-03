@@ -1,0 +1,399 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('../fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{ /*псевдоэлементы у всех элементов*/
+    box-sizing: inherit; /*наследуют от родителя*/
+}
+body{
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #4E4E4E;
+  /*max-width: 1600px;
+  margin: 0 auto;*/
+}
+.wrapper{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/*начало стилей header*/
+.header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  /*background-color: rgba(0, 0, 0, 0.07);*/
+}
+.header__nav{
+  padding: 25px 0px;
+}
+.header__list, .footer__nav--list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.header__item{
+  margin-right: 85px;
+}
+.header__item:last-child{ /*Обнуляет отступ справа в последнем дочернем элементе*/
+  margin-right: 0px;
+}
+.header__logo,.slider__our-community--img{
+  width: 45px;
+}
+.header__link, .footer__nav--link, .footer__credits{
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+  opacity: .75;
+}
+/*начало стилей intro*/
+.intro{
+  background: url(../img/bg-image.png) no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  padding-top: 230px;
+}
+.main__intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+.intro__title{
+  max-width: 730px;
+  text-align: center;
+  font-weight: Bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.intro__subtitle{
+  max-width: 500px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.button{
+  padding: 15px 47px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #00AFDB;
+  border: 0px;
+}
+.button:hover, .button:focus, .button:active{
+  background: #009CC2;
+}
+.socials{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+.socials_item{
+  margin-right: 30px;
+}
+.socials_item:last-child{
+  margin-right: 0px;
+}
+.socials_item-link:hover,.socials_item-link:focus,.socials_item-link:active{
+  opacity: .75;
+}
+.socials__logo{
+  width: 20px;
+}
+/*конец стилей intro*/
+
+/*начало стилей content*/
+.content__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0px;
+}
+.content__wrapper-block{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.content__block-items{
+  max-width: 407px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 245px;
+}
+.content__block-items:last-child{
+  margin-right: 0px;
+}
+.content__block-items-2{
+  max-width: 407px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 140px;
+}
+.content__block-items-2:last-child{
+  margin-right: 0px;
+}
+.content__title{
+  font-weight: Bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #373737;
+  max-width: 367px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.content__subtitle,.slider__our-community--subtitle{
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+span{
+  font-weight: bold;
+}
+.content__block-img{
+  max-width: 407px;
+}
+/*конец стилей content*/
+
+/*начало стилей slider*/
+.slider{
+  background-color: #F5F6F7;
+}
+.slider__wrapper{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+.main__slider{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider__our-community{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 140px;
+}
+.slider__our-community--title{
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #373737;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.slider__list-main--scroll-number{
+display: flex;
+justify-content: flex-end;
+padding-right: 270px;
+margin-bottom: 20px;
+}
+.slider__list-main--nav{
+  font-size: 18px;
+  line-height: 25px;
+  color: #373737;
+}
+.slider__list-main--slider{
+  height: 244px;
+  margin-right: 30px;
+}
+.slider__list-main--slider:last-child{
+  margin-right: 0px;
+}
+/*конец стилей slider*/
+
+/*начало стилей form*/
+.sign-up{
+  background: url(../img/pexels-christina-morillo-1181675\ 1.png) no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  padding-top: 217px;
+  padding-bottom: 277px;
+}
+.sign-up__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up__title{
+  font-weight: Bold;
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 380px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.sign-up__form-wrapp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sign-up__field{
+  border: 0px;
+  width: 340px;
+  padding: 15px 24px; 
+  font-size: 14px;
+  line-height: 20px;
+  color: #373737;
+}
+.sign-up__field::placeholder{
+  font-size: 14px;
+  line-height: 20px;
+  color: #373737;
+}
+.sign-up__button{
+  padding: 15px 24px;
+  background: #00AFDB;
+  border: 0px;
+}
+.sign-up__button:hover,.sign-up__button:focus,.sign-up__button:active{
+  background: #009CC2;
+}
+.button-check{
+  width: 24px;
+}
+/*конец стилей form*/
+
+/*начало стилей download*/
+.main__download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+.download__title{
+  font-weight: Bold;
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 250px;
+  text-transform: uppercase;
+  color: #373737;
+  padding-top: 120px;
+  margin-bottom: 20px;
+}
+.download__subtitle{
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 480px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.main__download-button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.button__download{
+  background: #00AFDB;
+  max-width: 188px;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+.button__download:last-child{
+  margin-right: 0px;
+}
+.button__download:hover,.button__download:focus,.button__download:active{
+  background: #009CC2;
+}
+.button__download-title{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 18px;
+}
+.button__download-icon{
+  background-color: #009CC2;
+  padding: 15px;
+}
+.button__download-icon--img{
+  width: 20px;
+}
+/*конец стилей download*/
+
+/*начало стилей footer*/
+.footer{
+  background: #000000;
+  margin-bottom: 20px;
+}
+.footer__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 160px;
+}
+.footer__nav,.footer__credits{
+  padding-top: 73px 0px;
+}
+.footer__nav--items{
+  margin-right: 20px;
+}
+.footer__nav--items:last-child{
+  margin-right: 0px;
+}
+/*конец стилей footer*/
