@@ -38,13 +38,13 @@ body{
   font-size: 14px;
   line-height: 1.2;
   color: #4E4E4E;
-  /*max-width: 1600px;
-  margin: 0 auto;*/
-}
-.wrapper{
-  max-width: 1600px;
+  width: 1600px;
   margin: 0 auto;
 }
+/*.wrapper{
+  max-width: 1600px;
+  margin: 0 auto;
+}*/
 
 /*начало стилей header*/
 .header{
